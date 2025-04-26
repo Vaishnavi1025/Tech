@@ -1,0 +1,34 @@
+interface Animal{
+    void makesound();
+    void eat();
+}
+class Dog implements Animal{
+    public void makesound(){
+        System.out.println("bow bow");
+    }
+    public void eat(){
+        System.out.println("Dog eats meat");
+    }}
+    
+    
+    class Cat implements Animal{
+        public void makesound(){
+            System.out.println("meow meow");
+        }
+        public void eat(){
+            System.out.println("Cat eats fish");
+        }
+    }
+    
+    public class interfacemain{
+        // This is the main method where the program starts execution
+    public static void main(String args[]){
+        Animal d = new Dog();
+        d.makesound();
+        d.eat();
+        Animal c = new Cat();
+        c.makesound();
+        c.eat();
+    }
+}
+
